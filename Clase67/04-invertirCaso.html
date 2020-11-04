@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Crear una función invertirCaso que tome como argumento un string string y devuelva un string donde cada letra tiene el caso invertido, es decir, cada letra está mayúscula si estaba en minúscula, y viceversa.
+
+    //definir palabra a invertir
+    //funcion invertir caso; recorrer el string/array 
+    //reconocer si el caracter esta mayuscula o minuscula
+    //devolver el string invertido
+
+    const word = Array.from(prompt('Escribi una palabra'));
+
+    function invertirCaso(word) {
+      return word
+        .map(letter => letter.toLowerCase() === letter ? letter.toUpperCase() : letter.toLowerCase())
+        .reduce((acc, current) => acc + current);
+    }
+
+    console.log(invertirCaso(word));
+  </script>
+
+
+
+</body>
+
+</html>

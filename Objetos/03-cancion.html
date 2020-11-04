@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Tenemos un objeto en la variable song con diferentes propiedades que representan una canción de spotify.
+    // Queremos crear un nuevo objeto, guardandolo en la variable cancion, a partir de las propiedades del objeto que tenemos en song
+    // El nuevo objeto tiene que tener las propiedades titulo, banda, y duracion (en segundos, ya que en el objeto original song está en milisegundos)
+
+    var song = {
+      title: "Rock and Roll",
+      bandName: "Led Zeppelin",
+      duration: 166000,
+      album: "Led Zeppelin IV",
+    };
+
+    const cancion = {
+      title: song.title,
+      bandName: song.bandName,
+      duration: song.duration / 1000
+    };
+
+    console.log(cancion); // { titulo: 'Rock and Roll', banda: 'Led Zeppelin', duracion: 166 }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+ // Crear una función obtenerMenor que tome como argumento un array de números numeros y devuelva el menor de ellos. Ejemplo:
+
+const numeros = [5, 7, 99, 34, 54, 2, 12];
+
+Array.min = function(array){
+return Math.min.apply( Math, array );
+}
+
+const numeroMenor = Array.min(numeros);
+console.log(numeroMenor);  
+
+// paso 1: extender la funcionalidad de la clase Array
+//paso 2: encontrar el menor de un array utilizando Math.min
+//paso 3: aplicar Array.min a tu array
+</script>    
+</body>
+</html>
