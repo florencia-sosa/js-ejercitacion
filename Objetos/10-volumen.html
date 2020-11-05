@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Crear una función que devuelva el volumen de una caja cuando se le pase un objeto con las medidas de la misma, correspondientes al ancho, alto, y largo. El volumen se calcula multiplicando entre sí dichos valores.
+
+    const size = {
+      width: 2,
+      length: 5,
+      height: 1
+    };
+
+
+    getBoxVolume = (size) => {
+      const volumen = size.width * size.length * size.height;
+      return volumen;
+    }
+
+    console.log(getBoxVolume(size));
+  </script>
+</body>
+
+</html>
